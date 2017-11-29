@@ -7,23 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C01CD1CE1FCB466400CE3D9C /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C01CD1CD1FCB466400CE3D9C /* ItemCell.swift */; };
+		C040BCE01FCB3D6C000FC21C /* MaterialView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C040BCDF1FCB3D6C000FC21C /* MaterialView.swift */; };
 		C0434F941FC8704F00D56E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0434F931FC8704F00D56E42 /* AppDelegate.swift */; };
-		C0434F961FC8704F00D56E42 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0434F951FC8704F00D56E42 /* ViewController.swift */; };
+		C0434F961FC8704F00D56E42 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0434F951FC8704F00D56E42 /* MainVC.swift */; };
 		C0434F991FC8704F00D56E42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0434F971FC8704F00D56E42 /* Main.storyboard */; };
 		C0434F9C1FC8704F00D56E42 /* DreamLister.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C0434F9A1FC8704F00D56E42 /* DreamLister.xcdatamodeld */; };
 		C0434F9E1FC8704F00D56E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C0434F9D1FC8704F00D56E42 /* Assets.xcassets */; };
 		C0434FA11FC8704F00D56E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0434F9F1FC8704F00D56E42 /* LaunchScreen.storyboard */; };
+		C0BBC2061FCB80CB00EBE739 /* ItemDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BBC2051FCB80CB00EBE739 /* ItemDetailsVC.swift */; };
+		C0BBC2081FCB947200EBE739 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0BBC2071FCB947200EBE739 /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C01CD1CD1FCB466400CE3D9C /* ItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
+		C040BCDF1FCB3D6C000FC21C /* MaterialView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaterialView.swift; sourceTree = "<group>"; };
 		C0434F901FC8704F00D56E42 /* DreamLister.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamLister.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0434F931FC8704F00D56E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		C0434F951FC8704F00D56E42 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C0434F951FC8704F00D56E42 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		C0434F981FC8704F00D56E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C0434F9B1FC8704F00D56E42 /* DreamLister.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DreamLister.xcdatamodel; sourceTree = "<group>"; };
 		C0434F9D1FC8704F00D56E42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C0434FA01FC8704F00D56E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C0434FA21FC8704F00D56E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C0BBC2051FCB80CB00EBE739 /* ItemDetailsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ItemDetailsVC.swift; sourceTree = "<group>"; };
+		C0BBC2071FCB947200EBE739 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C040BCDE1FCB3D39000FC21C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C040BCDF1FCB3D6C000FC21C /* MaterialView.swift */,
+				C01CD1CD1FCB466400CE3D9C /* ItemCell.swift */,
+				C0BBC2071FCB947200EBE739 /* CustomTextField.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		C0434F871FC8704E00D56E42 = {
 			isa = PBXGroup;
 			children = (
@@ -56,8 +74,10 @@
 		C0434F921FC8704F00D56E42 /* DreamLister */ = {
 			isa = PBXGroup;
 			children = (
+				C0BBC2041FCB809B00EBE739 /* Controllers */,
+				C040BCDE1FCB3D39000FC21C /* View */,
+				C0434FB81FC8999200D56E42 /* Model */,
 				C0434F931FC8704F00D56E42 /* AppDelegate.swift */,
-				C0434F951FC8704F00D56E42 /* ViewController.swift */,
 				C0434F971FC8704F00D56E42 /* Main.storyboard */,
 				C0434F9D1FC8704F00D56E42 /* Assets.xcassets */,
 				C0434F9F1FC8704F00D56E42 /* LaunchScreen.storyboard */,
@@ -65,6 +85,22 @@
 				C0434F9A1FC8704F00D56E42 /* DreamLister.xcdatamodeld */,
 			);
 			path = DreamLister;
+			sourceTree = "<group>";
+		};
+		C0434FB81FC8999200D56E42 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C0BBC2041FCB809B00EBE739 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				C0434F951FC8704F00D56E42 /* MainVC.swift */,
+				C0BBC2051FCB80CB00EBE739 /* ItemDetailsVC.swift */,
+			);
+			name = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +176,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C0434F961FC8704F00D56E42 /* ViewController.swift in Sources */,
+				C0BBC2081FCB947200EBE739 /* CustomTextField.swift in Sources */,
+				C0BBC2061FCB80CB00EBE739 /* ItemDetailsVC.swift in Sources */,
+				C0434F961FC8704F00D56E42 /* MainVC.swift in Sources */,
 				C0434F941FC8704F00D56E42 /* AppDelegate.swift in Sources */,
 				C0434F9C1FC8704F00D56E42 /* DreamLister.xcdatamodeld in Sources */,
+				C040BCE01FCB3D6C000FC21C /* MaterialView.swift in Sources */,
+				C01CD1CE1FCB466400CE3D9C /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -306,6 +346,7 @@
 				C0434FA71FC8704F00D56E42 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
